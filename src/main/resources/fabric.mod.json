@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "idontwannascrollagain",
+  "version": "${version}",
+  "name": "IDONTWANNASCROLLAGAIN",
+  "description": "Keep your scroll position when you refresh your Minecraft server list",
+  "authors": [
+    "TheVoidBlock"
+  ],
+  "contact": {
+    "homepage": "modrinth.com/mod/idontwannascrollagain",
+    "sources": "https://github.com/thevoidblock/idontwannascrollagain",
+    "issues": "https://github.com/thevoidblock/idontwannascrollagain/issues"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/idontwannascrollagain/icon.png",
+  "environment": "client",
+  "mixins": [
+    "idontwannascrollagain.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
