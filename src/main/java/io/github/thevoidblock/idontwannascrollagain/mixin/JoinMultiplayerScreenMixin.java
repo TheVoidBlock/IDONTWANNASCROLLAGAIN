@@ -21,6 +21,6 @@ public class JoinMultiplayerScreenMixin extends Screen {
     @SuppressWarnings("ConstantConditions")
     @Inject(method = "refreshServerList", at = @At(value = "TAIL", target = "Lnet/minecraft/client/MinecraftClient;setScreen(Lnet/minecraft/client/gui/screen/Screen;)V"))
     void refresh(CallbackInfo ci) {
-        ((JoinMultiplayerScreenAccessor)this.minecraft.screen).getServerSelectionList().setScrollAmount(this.serverSelectionList.scrollAmount());
+        ((JoinMultiplayerScreenAccessor)this.minecraft.gui.screen()).getServerSelectionList().setScrollAmount(this.serverSelectionList.scrollAmount());
     }
 }
